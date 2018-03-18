@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
     var randomNumber ;
-    var wins ;
-    var losses ;
+    var wins = 0;
+    var losses = 0;
     var playerNum = 0;
     var crystal1 ;
     var crystal2 ;
@@ -27,10 +27,14 @@ $(document).ready(function() {
             playerNum += crystal1;
             console.log(playerNum);
             printPlayerNum();
+            win();
+            lose();
         } else {
             playerNum += crystal1;
             console.log(playerNum);
             printPlayerNum();
+            win();
+            lose();
         }
     }
 
@@ -41,10 +45,14 @@ $(document).ready(function() {
             playerNum += crystal2;
             console.log(playerNum);
             printPlayerNum();
+            win();
+            lose();
         } else {
             playerNum += crystal2;
             console.log(playerNum);
             printPlayerNum();
+            win();
+            lose();
         }
     }
 
@@ -55,10 +63,14 @@ $(document).ready(function() {
             playerNum += crystal3;
             console.log(playerNum);
             printPlayerNum();
+            win();
+            lose();
         } else {
             playerNum += crystal3;
             console.log(playerNum);
             printPlayerNum();
+            win();
+            lose();
         }
     }
 
@@ -69,10 +81,14 @@ $(document).ready(function() {
             playerNum += crystal4;
             console.log(playerNum);
             printPlayerNum();
+            win();
+            lose();
         } else {
             playerNum += crystal4;
             console.log(playerNum);
             printPlayerNum();
+            win();
+            lose();
         }
     }
 
@@ -88,18 +104,27 @@ $(document).ready(function() {
     function reset () {
         $("#random-number").html("<h1>0</h1>");
         $("#player-number").html("<h1>0</h1>");
+        playerNum = 0;
     }
 
-    if (playerNum == randomNumber) {
-        alert("You win!");
-        wins++;
-        numGen();
-        reset();
-    } else if (playerNum > randomNumber) {
-        alert("You lose!");
-        losses++;
-        numGen();
-        reset();
+    function win() {
+        if (playerNum == randomNumber) {
+            alert("You win!");
+            wins++;
+            $("#wins").text(wins);
+            reset();
+            numGen();
+        }
+    }
+
+    function lose() {
+        if (playerNum > randomNumber) {
+            alert("You lose!");
+            losses++;
+            $("#losses").text(losses);
+            reset();
+            numGen();
+        }
     }
 
 });
