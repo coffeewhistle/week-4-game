@@ -90,8 +90,16 @@ $(document).ready(function() {
         $("#player-number").html("<h1>0</h1>");
     }
 
-    if (playerNum === randomNumber) {
-
+    if (playerNum == randomNumber) {
+        alert("You win!");
+        wins++;
+        numGen();
+        reset();
+    } else if (playerNum > randomNumber) {
+        alert("You lose!");
+        losses++;
+        numGen();
+        reset();
     }
 
 });
