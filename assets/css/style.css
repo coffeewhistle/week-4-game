@@ -1,8 +1,60 @@
 img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
+    padding: 5px; 
+    margin: 10px;  
 }
 
 body {
-    background-image: url(assets/images/background.jpeg)
+    background-image: url(../images/background.jpeg);
+    background-size: 100%;
+}
+
+#header {
+    background-color: coral;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#instruction {
+    background-color: bisque;
+    color: green;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#random-number {
+    background-color: aquamarine;
+    color: darkblue;
+    height: 100%;
+}
+
+#win-loss {
+    background-color: cyan;
+    height: 100%;
+    font-weight: bold;
+}
+
+.crystal {
+    background-color: white;
+    margin: 20px;
+}
+
+#score {
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#player-number {
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin: 20px auto;
 }

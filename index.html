@@ -15,48 +15,49 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <header>Crystals Collector</header>
+                <header id="header">Crystals Collector</header>
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
+            <div class="col-12" id="instruction">
                 <p>You will be given a random number at the start of the game.</p>
                 <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
                 <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
                 <p>The value of each crystal is hidden from you until you click on it.</p>
-                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                <p>Each time when the game 
+                starts, the game will change the values of each crystal.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-8">
+            <div class="col-3">
                 <div id="random-number"><h1>0</h1></div>
             </div>
-            <div class="col-4">
+            <div class="col-2" id="win-loss">
                 <p>Wins: <span id="wins">0</span></p>
                 <p>Losses: <span id="losses">0</span></p>
             </div>
         </div>
         <div class="row">
-            <div class="col-3 mp-20">
-                <img id="crystal-1" src="assets/images/crystal1.png" alt="Crystal 1">
+            <div class="col-1 mp-20">
+                <img class="crystal" id="crystal-1" src="assets/images/crystal1.png" alt="Crystal 1">
             </div>
-            <div class="col-3">
-                <img id="crystal-2" src="assets/images/crystal2.png" alt="Crystal 2">
+            <div class="col-1">
+                <img class="crystal" id="crystal-2" src="assets/images/crystal2.png" alt="Crystal 2">
             </div>
-            <div class="col-3">
-                <img id="crystal-3" src="assets/images/crystal3.png" alt="Crystal 3">
+            <div class="col-1">
+                <img class="crystal" id="crystal-3" src="assets/images/crystal3.png" alt="Crystal 3">
             </div>
-            <div class="col-3">
-                <img id="crystal-4" src="assets/images/crystal4.png" alt="Crystal 4">
+            <div class="col-1">
+                <img class="crystal" id="crystal-4" src="assets/images/crystal4.png" alt="Crystal 4">
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
+            <div class="col-3" id="score">
                 Your total score is:
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
+            <div class="col-3">
                 <h1 id="player-number">0</h1>
             </div>
         </div>
